@@ -11,14 +11,14 @@ public class Principal {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Qual é o preço do dolar? ");
+        System.out.print("Qual é o preço do dolar? ");
         double preco = sc.nextDouble();
-        System.out.println("Qual valor voce deseja converter: ");
+        System.out.print("Qual valor voce deseja converter: ");
         double valor = sc.nextDouble();
 
         double valor_convertido = Dolar.convertido(preco, valor);
 
-        System.out.println("Valor convertido: " + valor_convertido);
+        System.out.print("Valor convertido: " + valor_convertido);
 
         sc.close();
 
